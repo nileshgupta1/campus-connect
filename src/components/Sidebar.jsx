@@ -11,7 +11,7 @@ function Sidebar() {
     return (
         <div className="md:w-[400px] h-screen flex-col md:flex hidden bg-green-100 mx-10 mt-10 rounded-2xl">
             {
-                ["Dashboard", "Gate Pass", "Leave Form", "Mess Fee", "Gradesheet"].map((item, index) => (
+                ["Dashboard", "Gate Pass", "Leave Form", "Mess Fee", "Gradesheet", "Library"].map((item, index) => (
                     <SideBarItem title={item} key={index + item} />
                 ))
             }
