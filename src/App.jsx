@@ -1,17 +1,15 @@
-import Complaint from "./components/Complaint";
-import Dashboard from "./components/Dashboard";
-import GatePass from "./components/GatePass";
-import LeaveForm from "./components/LeaveForm";
-import Sidebar from "./components/Sidebar";
+import React from "react";
+import {Home, Complaint, Dashboard, GatePass, LeaveForm, Sidebar, Login, Register } from "./components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (
-    <h1 className="flex flex-row justify-items-center ">
-      <div><Sidebar /></div>
-      {/* <Dashboard /> */}
-      <div><GatePass /></div>
-      {/* <div><Complaint /></div> */}
-      <div><LeaveForm /></div>
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }

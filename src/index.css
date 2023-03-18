@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-back{
+  background-image: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );
+}
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  animation: 
+    typing 1s forwards;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: fit-content }
+}
