@@ -75,7 +75,7 @@ function GatePass() {
                 <input type="text" name="contact" onChange={handleChange} value={form.contact} className={styles} />
             </div>
             <div>
-                <button className='text-xl text-white bg-gray-500 border border-gray-300'>Submit</button>
+                <button className='text-xl text-white p-3 ml-5 bg-gray-500 hover:bg-gray-400 active:bg-gray-500 border rounded-md border-gray-300'>Submit</button>
             </div>
         </div>
     )
