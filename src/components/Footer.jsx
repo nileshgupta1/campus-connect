@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer
-            className="text-center text-3xl  lg:text-left">
-            <div className="p-4 text-center text-green-300">
-                © 2023 Copyright 
+            className="text-center text-lg  lg:text-left">
+            <div className="p-4 text-center text-white">
+                © 2023 Copyright
                 <a
                     className=""
                     href="#"
