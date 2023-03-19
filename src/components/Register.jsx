@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export default function Register() {
 
@@ -14,13 +14,14 @@ export default function Register() {
     const [course, setCourse] = useState("B.Tech")
     const [branch, setBranch] = useState("CSE")
     const [dept,setDept] = useState("Computer Science")
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
         var baseUrl = `https://script.google.com/macros/s/AKfycbzw2trirj4yiPXmENQxrz5hUvjzqGAb6SESYsDhutAEfT8OPR3uIbfK3hRGaELREF6m/exec?name=${encodeURIComponent(name)}&fname=${encodeURIComponent(parentName)}&roll=${encodeURIComponent(rollno)}&dept=${encodeURIComponent(dept)}&ctype=${encodeURIComponent(course)}&mob=${encodeURIComponent(num)}&pmob=${encodeURIComponent(parentNum)}&room=${encodeURIComponent(roomno)}&hobl=${encodeURIComponent(block)}&cour=${encodeURIComponent(branch)}&pwd=${encodeURIComponent(password)}`
         fetch(baseUrl).then((response)=>{
                 if(response.status === 200){
-                    console.log("Registered successfully");
+                    navigate("/dashboard")
                 }
         })
     }

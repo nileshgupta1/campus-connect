@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 export default function Login() {
     const [rollno, setRollno] = useState('');
     const [password, setPassword] = useState('');
     const [data,setData] = useState(null)
+    const navigate = useNavigate();
     const signin = (e) => {
         e.preventDefault();
         data.map((info) =>{
             if(info.roll === rollno){
                 if(info.password === password){
-                    console.log("Correct Credentials!")
+                    navigate("/dashboard");
                 }
             }
 

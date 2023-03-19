@@ -16,6 +16,11 @@ function Complaint() {
             [name]: value
         }));
     }
+
+    const handleClick = () => {
+        var uri = `https://script.google.com/macros/s/AKfycbxboaaGEa3Mwy4eNZaLMz0_cM7Gu3nmtQO_gmsbsapD-ilm3NYcvCstrZHSO_8e6AEC/exec?roll=${encodeURIComponent(data.rollno)}&compdep=${encodeURIComponent(data.dept)}&compdes=${encodeURIComponent(data.description)}&comploc=${encodeURIComponent(data.location)}&preftim=${encodeURIComponent(data.time)}`;
+        fetch(uri).then((response) => console.log(response))
+    }
     const options = ['Electrical', 'Plumbing', 'Painting', 'Carpentry'];
     const onOptionChangeHandler = (event) => {
         console.log("User Selected Value - ", event.target.value)
@@ -52,7 +57,7 @@ function Complaint() {
                 <input name='time' type="time" onChange={handleChange} value={data.time} />
             </div>
             <div>
-                <button className=' border border-gray-400'>Submit</button>
+                <button className=' border border-gray-400' onClick={handleClick}>Submit</button>
             </div>
         </div>
     )
