@@ -6,7 +6,8 @@ import LeaveForm from "./LeaveForm"
 import Sidebar from "./Sidebar"
 import Login from "./Login"
 import Register from "./Register"
-
+import GatePassLog from "./GatePassLog"
+import ComplaintList from "./ComplaintList"
 export {
     Home,
     Complaint,
@@ -14,5 +15,7 @@ export {
     GatePass,
     LeaveForm,
     Sidebar,
-    Login, Register
+    Login, Register,
+    GatePassLog,
+    ComplaintList
 };
