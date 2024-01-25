@@ -1,9 +1,7 @@
 #Campus-Connect
 
 
-
-https://github.com/nileshgupta1/campus-connect/assets/117779500/ae7cd4fd-9f4c-4046-9edf-b4a5e45b5616
-
+![Demo](https://github.com/nileshgupta1/campus-connect/assets/117779500/7a2bc230-fc5f-462b-844c-bd592adc3f09)
 
 ![Screenshot (866)](https://github.com/nileshgupta1/campus-connect/assets/117779500/005d4767-58df-406e-9654-53874115eadf)
 ![Screenshot (867)](https://github.com/nileshgupta1/campus-connect/assets/117779500/073b0a3e-02b5-4ce2-9f37-4cdcc3e275de)
